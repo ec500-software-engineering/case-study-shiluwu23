@@ -24,6 +24,7 @@ MacOS, Linux,, Windows, Raspberry Pi and Android are tested on their CI.
 A C API separates user level code in different languages from the core runtime.
 
 * Client
+
 **Client Defines** the computation as a dataflow graph. The client creates a session, which sends the graph definition to the distributed master as a tf.GraphDef protocol buffer. When the client evaluates a node or nodes in the graph, the evaluation triggers a call to the distributed master to initiate computation.
 
 The client initiates graph execution using a session. It has built a graph that applies weights (w) to a feature vector (x), adds a bias term (b) and saves the result in a variable (s). "/job:worker/task:0" and "/job:ps/task:0" are both tasks with worker services. "PS" stands for "parameter server": a task responsible for storing and updating the model's parameters. Other tasks send updates to these parameters as they work on optimizing the parameters. 
@@ -32,6 +33,7 @@ The client initiates graph execution using a session. It has built a graph that 
 * Distributed Master
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/Distributed%20Master.png)
 **The distributed master** prunes the graph to obtain the subgraph required to evaluate the nodes requested by the client, partitions the graph to obtain graph pieces for each participating device, and caches these pieces so that they may be re-used in subsequent steps. Since the master sees the overall computation for a step, it applies standard optimizations such as common subexpression elimination and constant folding. It then coordinates execution of the optimized subgraphs across a set of tasks.
+
 * Worker Services
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/Worker%20Services.png)
 **The worker service** in each task handles requests from the master, schedules Schedule the execution of graph operations using kernel implementations appropriate to the available hardware (CPUs, GPUs, etc)., and mediates direct communication between other worker services.
