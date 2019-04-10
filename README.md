@@ -8,11 +8,11 @@ If the project was started today, I would still use python and C++ as the coding
 b.	Environment needed: Anaconda.
 c.	frameworks / libraries: TensorFlow, Pandas, TensorFlow-gpu, etc.
 ## 2.	Testing
-a.	One of the easiest ways to get started using TensorFlow Serving is with Docker.
-1.	[20%] Testing: describe unit/integration/module tests and the test framework
- .	How are they ensuring the testing is meaningful? Do they have code coverage metrics for example?
-a.	What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?
-b.	What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang
+One of the easiest ways to get started using TensorFlow Serving is with Docker. With Docker, we can manage our infrastructure in the same ways we manage your applications. Docker provides tooling and a platform to manage the lifecycle of our containers: Develop the application and its supporting components using containers. The container becomes the unit for distributing and testing our application.
+### CI platform
+Since TensorFlow is a cross-platform tool that can run on CPU and GPU hardware, the maintainers have set up multiple pipelines to build and test the tool on different operating system platforms and CPU/GPU configurations. Their pipelines are built using Jenkins.
+
+MacOS, Linux,, Windows, Raspberry Pi and Android are tested on their CI.
 
 ## 3. Software architecture
 [20%] Software architecture in your own words, including:
