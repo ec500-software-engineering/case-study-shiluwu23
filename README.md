@@ -53,6 +53,19 @@ It perform the computation for individual graph operations. If it is difficult o
 
 ## 4. Defects
 
+**No GPU support other than Nvidia and only language support**
+
+Currently, the only supported GPUs are that of NVIDIA and the only full language support is of Python which makes it a disadvantage as there is a rise of other languages in deep learning.
+
+**Missing Symbolic Loops**
+
+When it comes to variable length sequences, the most required feature are the symbolic loops. However, TensorFlow does not offer this feature, but there is a workaround using finite unfolding (bucketing).
+
+**Computation Speed**
+
+TensorFlow is lagging behind other computing framework such as Torch7, CNTK and Caffe.
+
+
 ## 5. Demonstration
 
 ## Reference
