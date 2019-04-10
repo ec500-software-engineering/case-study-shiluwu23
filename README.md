@@ -15,13 +15,10 @@ Since TensorFlow is a cross-platform tool that can run on CPU and GPU hardware, 
 MacOS, Linux,, Windows, Raspberry Pi and Android are tested on their CI.
 
 ## 3. Software architecture
-[20%] Software architecture in your own words, including:
- .	How would you add / edit functionality if you wanted to? How would one use this project from external projects, or is it only usable as a standalone program?
-a.	What parts of the software are asynchronous (if any)?
+* General architecture
+** Client
 b.	Please make diagrams as appropriate for your explanation
-c.	How are separation of concerns and information hiding handled?
-d.	What architectural patterns are used
-e.	Does the project lean more towards object oriented or functional components
+b.	Please make diagrams as appropriate for your explanation
 ## 4. Defects
 	[20%] Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
 f.	Does the issue require an architecture change, or is it just adding a new function or?
