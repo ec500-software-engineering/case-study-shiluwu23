@@ -74,3 +74,5 @@ https://www.tensorflow.org/tutorials/
 https://stackoverflow.com/questions/35677724/tensorflow-why-was-python-the-chosen-language
 
 https://www.infoworld.com/article/3278008/what-is-tensorflow-the-machine-learning-library-explained.html
+
+https://data-flair.training/blogs/tensorflow-pros-and-cons/
