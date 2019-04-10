@@ -32,13 +32,16 @@ The client initiates graph execution using a session. It has built a graph that 
 
 * Distributed Master
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/Distributed%20Master.png)
+
 **The distributed master** prunes the graph to obtain the subgraph required to evaluate the nodes requested by the client, partitions the graph to obtain graph pieces for each participating device, and caches these pieces so that they may be re-used in subsequent steps. Since the master sees the overall computation for a step, it applies standard optimizations such as common subexpression elimination and constant folding. It then coordinates execution of the optimized subgraphs across a set of tasks.
 
 * Worker Services
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/Worker%20Services.png)
+
 **The worker service** in each task handles requests from the master, schedules Schedule the execution of graph operations using kernel implementations appropriate to the available hardware (CPUs, GPUs, etc)., and mediates direct communication between other worker services.
 
 * Kernel Implementations
+
 It perform the computation for individual graph operations. If it is difficult or inefficient to represent a subcomputation as a composition of operations, users can register additional kernels that provide an efficient implementation written in C++. For example, we recommend registering your own fused kernels for some performance critical operations, such as the ReLU and Sigmoid activation functions and their corresponding gradients. The XLA Compiler has an experimental implementation of automatic kernel fusion.
 
 
