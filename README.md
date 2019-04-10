@@ -68,6 +68,11 @@ TensorFlow lacks behind in computational speed when compared to its competitors 
 
 ## 5. Demonstration
 
+The MNIST database contains 60,000 training images and 10,000 testing images. These images are 28 * 28 pixels and they are labeled with the number 1~10. 
+We will train a machine learning model to predict the Numbers in the picture.This is a 2-layer NN model for hand-written number recognition in Tensorflow. We could see the accuracy has reached 91.45%.
+
+![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/mnist.png)
+
 ## Reference
 https://www.tensorflow.org/tutorials/
 
