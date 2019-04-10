@@ -19,6 +19,7 @@ MacOS, Linux,, Windows, Raspberry Pi and Android are tested on their CI.
 
 ## 3. Software architecture
 * General architecture
+
 The user level code is separated by a C API into different languages from the core runtime.
 
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/General%20architecture.png)
@@ -26,12 +27,12 @@ The user level code is separated by a C API into different languages from the co
 
 * **Client**
 
-**Client Defines** the computation as a dataflow graph. The client creates a session, which sends the graph definition to the distributed master as a tf.GraphDef protocol buffer. When the client evaluates a node or nodes in the graph, the evaluation triggers a call to the distributed master to initiate computation.
+**Client** Defines the computation as a dataflow graph. The client creates a session, which sends the graph definition to the distributed master as a tf.GraphDef protocol buffer. When the client evaluates a node or nodes in the graph, the evaluation triggers a call to the distributed master to initiate computation.
 
 The client initiates graph execution using a session. It has built a graph that applies weights (w) to a feature vector (x), adds a bias term (b) and saves the result in a variable (s). "/job:worker/task:0" and "/job:ps/task:0" are both tasks with worker services. "PS" stands for "parameter server": a task responsible for storing and updating the model's parameters. Other tasks send updates to these parameters as they work on optimizing the parameters. 
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/Client.png)
 
-* Distributed Master
+* **Distributed Master**
 
 **The distributed master** prunes the graph to obtain the subgraph required to evaluate the nodes requested by the client, partitions the graph to obtain graph pieces for each participating device, and caches these pieces so that they may be re-used in subsequent steps. Since the master sees the overall computation for a step, it applies standard optimizations such as common subexpression elimination and constant folding. It then coordinates execution of the optimized subgraphs across a set of tasks.
 
