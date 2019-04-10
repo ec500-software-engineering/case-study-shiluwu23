@@ -1,5 +1,8 @@
 # case-study-shiluwu23
 Case Study Project: Tensorflow
+## Brief introduction
+TensorFlow is an open-source machine learning library for numerical computation and large-scale machine learning. It uses Python to provide a convenient front-end API for building applications with the framework, while executing those applications in high-performance C++.
+
 ## 1.	Technology and Platform
 a.	Language used: C++/Python
 TensorFlow is designed to support multiple client languages. Currently, Python is chosen as the first well-supported language for expressing and controlling the training of models and python supports the most features. However, the core of TensorFlow is written in a combination of highly-optimized C++ and CUDA (Nvidia's language for programming GPUs).
@@ -16,9 +19,7 @@ MacOS, Linux,, Windows, Raspberry Pi and Android are tested on their CI.
 
 ## 3. Software architecture
 * General architecture
-** Client
-b.	Please make diagrams as appropriate for your explanation
-b.	Please make diagrams as appropriate for your explanation
+
 ## 4. Defects
 	[20%] Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
 f.	Does the issue require an architecture change, or is it just adding a new function or?
