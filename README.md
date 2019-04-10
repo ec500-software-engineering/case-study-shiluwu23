@@ -1,5 +1,5 @@
-# case-study-shiluwu23
-Case Study Project: Tensorflow
+# Case-study-shiluwu23
+* Case Study Project: Tensorflow
 ## Brief introduction
 TensorFlow is an open-source machine learning library for numerical computation and large-scale machine learning. It uses Python to provide a convenient front-end API for building applications with the framework, while executing those applications in high-performance C++.
 
