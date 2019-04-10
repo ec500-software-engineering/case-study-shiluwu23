@@ -1,5 +1,8 @@
 # Case-study-shiluwu23
 * Case Study Project: Tensorflow
+
+BU Google Drive link:
+https://docs.google.com/document/d/1aEkK65U4RGKOq8chAGzuaRif82KWp6MWsPZ8_v-o674/edit?usp=sharing
 ## Brief introduction
 TensorFlow is an open-source machine learning library for numerical computation and large-scale machine learning. It uses Python to provide a convenient front-end API for building applications with the framework, while executing those applications in high-performance C++.
 
@@ -69,7 +72,8 @@ TensorFlow lacks behind in computational speed when compared to its competitors 
 ## 5. Demonstration
 
 The MNIST database contains 60,000 training images and 10,000 testing images. These images are 28 * 28 pixels and they are labeled with the number 1~10. 
-We will train a machine learning model to predict the Numbers in the picture.This is a 2-layer NN model for hand-written number recognition in Tensorflow. We could see the accuracy has reached 91.45%.
+
+We will train a machine learning model to predict the Numbers in the picture.This is a 2-layer NN model for hand-written number recognition in Tensorflow. The accuracy has reached 91.56%.
 
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/mnist.png)
 
