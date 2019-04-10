@@ -4,12 +4,14 @@
 TensorFlow is an open-source machine learning library for numerical computation and large-scale machine learning. It uses Python to provide a convenient front-end API for building applications with the framework, while executing those applications in high-performance C++.
 
 ## 1.	Technology and Platform
-a.	Language used: C++/Python
+* Language used: C++/Python
+
 TensorFlow is designed to support multiple client languages. Currently, Python is chosen as the first well-supported language for expressing and controlling the training of models and python supports the most features. However, the core of TensorFlow is written in a combination of highly-optimized C++ and CUDA (Nvidia's language for programming GPUs).
 
 If the project was started today, I would still use python and C++ as the coding languages. Since C++ offers speed and performance, and python is easy to integrate and it’s helpful for building Machine Learning Applications from its inception to deployment.
-b.	Environment needed: Anaconda.
-c.	frameworks / libraries: TensorFlow, Pandas, TensorFlow-gpu, etc.
+
+*	Environment needed: Anaconda.
+*	frameworks / libraries: TensorFlow, Pandas, TensorFlow-gpu, etc.
 ## 2.	Testing
 One of the easiest ways to get started using TensorFlow Serving is with Docker. With Docker, we can manage our infrastructure in the same ways we manage your applications. Docker provides tooling and a platform to manage the lifecycle of our containers: Develop the application and its supporting components using containers. The container becomes the unit for distributing and testing our application.
 ### CI platform
