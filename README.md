@@ -63,7 +63,7 @@ When it comes to variable length sequences, the most required feature are the sy
 
 **Computation Speed**
 
-TensorFlow is lagging behind other computing framework such as Torch7, CNTK and Caffe.
+TensorFlow lacks behind in computational speed when compared to its competitors such as Torch7, CNTK and Caffe.
 
 
 ## 5. Demonstration
