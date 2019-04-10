@@ -19,6 +19,7 @@ MacOS, Linux,, Windows, Raspberry Pi and Android are tested on their CI.
 
 ## 3. Software architecture
 * General architecture
+![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/General%20architecture.png)
 
 ## 4. Defects
 	[20%] Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
