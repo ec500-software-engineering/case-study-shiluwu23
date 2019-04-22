@@ -70,9 +70,9 @@ TensorFlow lacks behind in computational speed when compared to its competitors 
 
 
 ## 5. Demonstration
-Run the *train.py.*  This is CNN training model The accuracy has reached 91.56%.
+Run the *train.py.*  This is CNN training model. The accuracy has reached 90.625%.
 
-![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/mnist.png)
+![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/accuracy.jpg)
 
 ## Reference
 https://www.tensorflow.org/tutorials/
