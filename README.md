@@ -82,6 +82,16 @@ Run the *train.py.*  This file demonstrates training a simple Convolutional Neur
 * Import TensorFlow
 ```import tensorflow as tf```
 * Download and prepare the dataset 
+Open the training dataset folder, there are 1000 pictures in all, half are dogs and half are cats.
+```
+ShiludeMacBook-Pro:catdog shiluwu$ cd train
+ShiludeMacBook-Pro:train shiluwu$ ls
+cats	dogs
+ShiludeMacBook-Pro:train shiluwu$ for dir in `find ./ -maxdepth 1 -type d`;do echo -n -e "$dir\t";find $dir -type f|wc -l ;done;
+./	    1000
+.//dogs	     499
+.//cats	     500
+```
 * Create the convolutional base 
 * Compile and train the model 
 * Evaluate the model
