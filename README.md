@@ -79,6 +79,8 @@ Run the *train.py.*  This file demonstrates training a simple Convolutional Neur
 > Python 3
 ➜ pip3 install tensorflow 
 
+* Import TensorFlow
+```import tensorflow as tf```
 * Download and prepare the dataset 
 * Create the convolutional base 
 * Compile and train the model 
