@@ -73,10 +73,10 @@ TensorFlow lacks behind in computational speed when compared to its competitors 
 Run the *train.py.*  This file demonstrates training a simple Convolutional Neural Network (CNN) to classify cats and dogs. The accuracy has reached 90.625%.
 
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/accuracy.jpg)
-* Import TensorFlow  *
-* Download and prepare the dataset *
-* Create the convolutional base *
-* Compile and train the model *
+* Import TensorFlow  
+* Download and prepare the dataset 
+* Create the convolutional base 
+* Compile and train the model 
 
 ## Reference
 https://www.tensorflow.org/tutorials/
