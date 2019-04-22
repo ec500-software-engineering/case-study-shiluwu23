@@ -82,6 +82,7 @@ Run the *train.py.*  This file demonstrates training a simple Convolutional Neur
 * Import TensorFlow
 ```import tensorflow as tf```
 * Download and prepare the dataset 
+
 Open the training dataset folder, there are 1000 pictures in all, half are dogs and half are cats.
 ```
 ShiludeMacBook-Pro:catdog shiluwu$ cd train
