@@ -74,9 +74,10 @@ Run the *train.py.*  This file demonstrates training a simple Convolutional Neur
 
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/accuracy.jpg)
 * Import TensorFlow  *
-* Download and prepare the MNIST dataset *
+* Download and prepare the dataset *
 * Create the convolutional base *
 * Compile and train the model *
+
 ## Reference
 https://www.tensorflow.org/tutorials/
 
