@@ -30,7 +30,6 @@ num_filters_conv2 = 32
 filter_size_conv3 = 3
 num_filters_conv3 = 64
 
-# 全连接层的输出
 fc_layer_size = 1024
 
 
@@ -164,4 +163,4 @@ def train(num_iteration):
     total_iterations += num_iteration
 
 
-train(num_iteration=1000)
+train(num_iteration=2000)
