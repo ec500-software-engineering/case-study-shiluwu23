@@ -82,6 +82,12 @@ Run the *train.py.*  This file demonstrates training a simple Convolutional Neur
 
 * Download and prepare the dataset 
 * Create the convolutional base 
+
+void main()
+{
+printf("Hello, Markdown.");
+}
+
 * Compile and train the model 
 
 ## Reference
