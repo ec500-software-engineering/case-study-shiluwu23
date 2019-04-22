@@ -96,6 +96,13 @@ ShiludeMacBook-Pro:train shiluwu$ for dir in `find ./ -maxdepth 1 -type d`;do ec
 * Create the convolutional base 
 * Compile and train the model 
 * Evaluate the model
+```
+def show_progress(epoch, feed_dict_train, feed_dict_validate, val_loss, i):
+    acc = session.run(accuracy, feed_dict=feed_dict_train)
+    val_acc = session.run(accuracy, feed_dict=feed_dict_validate)
+    print("epoch:", str(epoch + 1) + ",i:", str(i) +
+          ",accuracy:", str(acc) + ",validation_acc:", str(val_acc) + ",val_loss:", str(val_loss))
+```
 ![](https://github.com/ec500-software-engineering/case-study-shiluwu23/blob/master/case%20study%20images/accuracy.jpg)
 ## Reference
 https://www.tensorflow.org/tutorials/
