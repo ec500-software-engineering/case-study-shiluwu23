@@ -76,6 +76,7 @@ Run the *train.py.*  This file demonstrates training a simple Convolutional Neur
 * Install TensorFlow  
 > Python 2
 ➜ pip install tensorflow
+
 > Python 3
 ➜ pip3 install tensorflow 
 
